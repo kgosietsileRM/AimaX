@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Studio — Development</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Stub Perchance root API so app.js doesn't crash on load
+    window.root = window.root || {};
+    root.generateImage = root.generateImage || (() => Promise.resolve({ dataUrl: '' }));
+    root.generateText  = root.generateText  || (() => Promise.resolve(''));
+  </script>
+</head>
+<body>
+
+<div class="model-card-container" id="model-card-container"></div>
+<div class="lightbox-overlay" id="lightboxOverlay"></div>
+<div class="toast" id="toastNotification"></div>
+
+<script src="html-factory.js"></script>
+<script src="config.js"></script>
+<script src="build-dom.js"></script>
+<script src="styles-ui.js"></script>
+<script src="generator.js"></script>
+<script src="image-manip.js"></script>
+<script src="ui.js"></script>
+<script src="editor.js"></script>
+<script src="img-to-prompt.js"></script>
+<script src="img-to-video.js"></script>
+<script src="img-to-story.js"></script>
+<script src="comic.js"></script>
+<script src="studio.js"></script>
+<script src="gallery.js"></script>
+<script src="extras.js"></script>
+</body>
+</html>
